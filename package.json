@@ -1,0 +1,17 @@
+{
+  "name": "qr-code-component",
+  "version": "1.0.0",
+  "description": "QR Code component project from Frontend Mentor",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --dist-dir public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.12.0",
+    "parcel": "2.12.0",
+    "prettier": "3.2.5"
+  }
+}
