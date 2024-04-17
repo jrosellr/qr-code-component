@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  min-width: 0;
+}

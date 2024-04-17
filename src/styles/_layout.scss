@@ -2,8 +2,10 @@
 @use 'utils';
 
 $spacing: (
+  'xs': utils.pxToRem(8px),
   's': utils.pxToRem(16px),
   'm': utils.pxToRem(24px),
+  'l': utils.pxToRem(32px),
 );
 
 $border-radius: (

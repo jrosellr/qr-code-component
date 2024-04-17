@@ -1,21 +1,20 @@
 @forward 'typography';
 @forward 'colors';
+@forward 'reset';
 @use 'layout';
 @use 'utils';
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  margin: utils.pxToRem(40px) auto 0 auto;
+
+  &__content {
+    background-color: var(--white);
+    padding: layout.space('xs');
+    border-radius: layout.border-radius('s'); // could probably be static 20px
+  }
 
   a {
     color: hsl(228, 45%, 44%);
@@ -27,15 +26,24 @@ body {
 }
 
 .presentation-wrapper {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  &__filler {
+    flex: 1;
+  }
 }
 
 .presentation-content {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .card {
   max-width: utils.pxToRem(320px);
+  max-height: utils.pxToRem(497px);
   padding: layout.space('s');
 
   background-color: var(--white);
@@ -60,12 +68,12 @@ body {
 
     text-align: center;
   }
+
+  &--shadow {
+    box-shadow: 0px utils.pxToRem(25px) 25rem hsla(0deg, 0%, 0%, 4.77%);
+  }
 }
 
 .pad-s {
   padding: 0 layout.space('s');
-}
-
-.debug {
-  border: 1px solid red;
 }
