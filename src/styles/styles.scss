@@ -25,22 +25,6 @@ body {
   background-color: var(--light-grey);
 }
 
-.presentation-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-
-  &__filler {
-    flex: 1;
-  }
-}
-
-.presentation-content {
-  margin: auto;
-}
-
 .card {
   max-width: utils.pxToRem(320px);
   max-height: utils.pxToRem(497px);
@@ -76,4 +60,14 @@ body {
 
 .pad-s {
   padding: 0 layout.space('s');
+}
+
+main {
+  height: 100dvh;
+  width: 100dvw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
