@@ -22,7 +22,6 @@
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);
   letter-spacing: utils.pxToRem(0.19px);
-  line-height: 1.1;
   margin-bottom: 1em;
 
   color: var(--grey);
@@ -41,7 +40,6 @@
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0; // do not allow this text style to be justified
-  line-height: 1;
   margin-bottom: utils.pxToRem(16px);
 
   color: var(--dark-navy);
